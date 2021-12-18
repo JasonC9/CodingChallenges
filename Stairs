@@ -1,0 +1,21 @@
+public class Stairs 
+{
+    public static void main(String args[]) 
+    {
+        System.out.println(waysToClimb(1));
+        System.out.println(waysToClimb(2));
+        System.out.println(waysToClimb(5));
+    }
+    public static int fib(int n)
+    {
+        if (n <= 1)
+        {
+            return n;
+        }
+        return fib(n - 1) + fib(n - 2);
+    }
+    public static int waysToClimb(int s)
+    {
+        return fib(s + 1);
+    }
+}
